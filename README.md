@@ -1,2 +1,2 @@
-# hello-git
-연습용 깃헙
+# node.js
+개인 과제용
