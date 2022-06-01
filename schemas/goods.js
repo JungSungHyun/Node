@@ -23,6 +23,10 @@ const goodsSchema = mongoose.Schema({
     {
         type: Number,
     },
+    cart : {
+        type : mongoose.Types.ObjectId,
+        ref : 'Cart',
+    }
 });
 
 module.exports = mongoose.model("Goods",goodsSchema);
