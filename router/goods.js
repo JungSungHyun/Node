@@ -98,7 +98,7 @@ router.post("/goods", async (req, res) => {
   if (goods.length) {
     return res.status(400).json({ success: false, errorMessage: "이미 있는 데이터 입니다." });
   }
-  const creategoods = await Goods.create({ goodsId, name, thumbnailUrl, category, price })
+  const creategoods = await Goods.create({ goodsId, name, thumbnailUrl, category, price, cart })
 
   res.json({ goods: creategoods });
 });
